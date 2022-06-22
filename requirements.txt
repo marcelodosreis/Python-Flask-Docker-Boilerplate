@@ -18,6 +18,7 @@ platformdirs==2.5.2
 pre-commit==2.19.0
 psycopg2-binary==2.9.3
 pycparser==2.21
+python-dotenv==0.20.0
 PyYAML==6.0
 scramp==1.4.1
 six==1.16.0
