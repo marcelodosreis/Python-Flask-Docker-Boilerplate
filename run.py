@@ -16,3 +16,4 @@ def insert():
     userRepo.insert_user(body["name"])
 
     return "OK"
+

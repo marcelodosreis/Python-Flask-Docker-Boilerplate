@@ -4,7 +4,7 @@ from sqlalchemy.orm import sessionmaker
 class DBConnection:
 
     def __init__(self) -> None:
-        self.__connection_string = 'postgresql+pg8000://root:pass@172.17.0.2:5432/python_boilerplate_db'
+        self.__connection_string = 'postgresql+pg8000://root:pass@172.21.0.2:5432/python_boilerplate_db'
         self.session = None
     
     def __enter__(self):
