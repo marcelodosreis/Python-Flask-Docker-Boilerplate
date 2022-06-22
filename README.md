@@ -23,3 +23,12 @@ docker-compose up --build
 
 
 ## Environment variables
+_You need create .env file, use .env.example file for template_
+```
+DATABASE_HOST=
+DATABASE_PORT=
+
+POSTGRES_USER=
+POSTGRES_PASSWORD=
+POSTGRES_DB=
+```
