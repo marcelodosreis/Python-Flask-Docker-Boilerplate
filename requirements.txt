@@ -16,6 +16,7 @@ nodeenv==1.6.0
 pg8000==1.29.1
 platformdirs==2.5.2
 pre-commit==2.19.0
+psycopg2-binary==2.9.3
 pycparser==2.21
 PyYAML==6.0
 scramp==1.4.1
