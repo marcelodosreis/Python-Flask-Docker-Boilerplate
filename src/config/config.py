@@ -1,10 +1,15 @@
+# Core
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
+
+# Libs
+import os
+
 
 class DBConnection:
 
     def __init__(self) -> None:
-        self.__connection_string = 'postgresql+pg8000://root:pass@172.21.0.2:5432/python_boilerplate_db'
+        self.__connection_string = f'postgresql+pg8000://{os.getenv("POSTGRES_USER")}:{os.getenv("POSTGRES_PASSWORD")}@{os.getenv("DATABASE_HOST")}:{os.getenv("DATABASE_PORT")}/{os.getenv("POSTGRES_DB")}'
         self.session = None
     
     def __enter__(self):
