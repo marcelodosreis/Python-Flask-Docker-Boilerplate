@@ -1,4 +1,4 @@
-# Python Boilerplate
+# Python Boilerplate 🐍
 
 ## Technologies
 - Python
@@ -7,7 +7,7 @@
 - PostgresSQL
 - Docker
 
-## Required Dependencies
+## Required Dependencies 
 - pip3 `sudo apt-get -y install python3-pip`
 - virtualenv  `pip3 install virtualenv`
 - pre-commit `pip3 install pre-commit`
