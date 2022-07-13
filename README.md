@@ -7,6 +7,12 @@
 - PostgresSQL
 - Docker
 
+## Required Dependencies
+- pip3 `sudo apt-get -y install python3-pip`
+- virtualenv  `pip3 install virtualenv`
+- pre-commit `pip3 install pre-commit`
+
+
 ## Base Setup
 - Install setup `. install.sh`
 
@@ -14,12 +20,6 @@
 ## Installation of the necessary “packages”.
 - Docker → [Docker Installation Tutorial](https://docs.docker.com/engine/install/ubuntu/)
 - Docker compose → [docker-compose Installation Tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-20-04-pt)
-
-## Start Project
-_Docker is configured to raise two containers, the flask application image and the postgres database. For more details see the **docker-compose.yml** configuration file_
-```
-docker-compose up --build
-```
 
 
 ## Environment variables
@@ -31,4 +31,10 @@ DATABASE_PORT=
 POSTGRES_USER=
 POSTGRES_PASSWORD=
 POSTGRES_DB=
+```
+
+## Start Project
+_Docker is configured to raise two containers, the flask application image and the postgres database. For more details see the **docker-compose.yml** configuration file_
+```
+docker-compose up --build
 ```
