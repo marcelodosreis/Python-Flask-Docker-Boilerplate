@@ -23,14 +23,16 @@
 
 
 ## Environment variables
-_You need create .env file, use .env.example file for template_
+_You need create **.env** file, use ``.env.example`` file for template_
 ```
-DATABASE_HOST=
-DATABASE_PORT=
+APPLICATION_PORT=3008
 
-POSTGRES_USER=
-POSTGRES_PASSWORD=
-POSTGRES_DB=
+DATABASE_HOST=localhost
+DATABASE_PORT=5432
+
+POSTGRES_USER=postgres_user
+POSTGRES_PASSWORD=postgres_password
+POSTGRES_DB=postgres_database
 ```
 
 ## Start Project
@@ -38,3 +40,6 @@ _Docker is configured to raise two containers, the flask application image and t
 ```
 docker-compose up --build
 ```
+_If everything went well, you will be able to access the **web api** on localhost and the port chosen in your ``.env``
+by default:_
+[http://127.0.0.1:3008/](http://127.0.0.1:3008/)
